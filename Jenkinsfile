@@ -1,3 +1,10 @@
-@Library('roboshop') _
+pipeline {
+ agent only
+  stages {
 
-ci()
+   stage ('Hello'){
+    steps {
+     echo 'Hello World'
+    }
+   }
+}
